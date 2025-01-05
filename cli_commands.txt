@@ -1,0 +1,5 @@
+docker-compose up -d
+
+docker exec -it neo4j neo4j-admin load --from=/import/your-dump-file.dump --database=neo4j --force
+
+docker-compose restart
